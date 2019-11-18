@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="CartCell" id="gTV-IL-0wX" customClass="CartCell" customModule="tabBarhomeWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="197"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="197"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HSk-04-WKC">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="197"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;fruit name&gt;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bE-Gb-f9q">
+                        <rect key="frame" x="0.0" y="78.5" width="197" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="3A7-di-UTo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HSk-04-WKC" secondAttribute="trailing" id="70L-va-Zgi"/>
+                <constraint firstItem="HSk-04-WKC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IsD-Kf-h8Z"/>
+                <constraint firstAttribute="trailing" secondItem="1bE-Gb-f9q" secondAttribute="trailing" id="R1Z-dE-b4W"/>
+                <constraint firstItem="1bE-Gb-f9q" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="SBv-9a-WXG"/>
+                <constraint firstItem="1bE-Gb-f9q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZtZ-qM-4Ya"/>
+                <constraint firstItem="HSk-04-WKC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c9M-bU-qGs"/>
+                <constraint firstAttribute="bottom" secondItem="HSk-04-WKC" secondAttribute="bottom" id="mtO-eI-fZY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="197" height="134"/>
+            <connections>
+                <outlet property="fruitImage" destination="HSk-04-WKC" id="u4t-hR-uE1"/>
+                <outlet property="fruitNameLabel" destination="1bE-Gb-f9q" id="4Kf-Bx-5lA"/>
+            </connections>
+            <point key="canvasLocation" x="142.75362318840581" y="113.50446428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
