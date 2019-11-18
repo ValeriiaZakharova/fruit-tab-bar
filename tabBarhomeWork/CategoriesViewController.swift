@@ -19,6 +19,8 @@ class CategoriesViewController: UIViewController {
         categories = Storage().makeCategories()
         tableView.register(UINib(nibName: "CategoryCell", bundle: nil), forCellReuseIdentifier: "CategoryCell")
         tableView.reloadData()
+        
+        debugPrint("my git")
     }
 }
 
